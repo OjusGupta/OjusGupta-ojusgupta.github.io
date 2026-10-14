@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ojus Gupta | AI & Machine Learning</title>
+<meta name="description" content="Portfolio of Ojus Gupta: ML, RAG and Python backend projects. B.Tech CSE (AI & ML), VIT Bhopal.">
+<meta property="og:title" content="Ojus Gupta | AI & Machine Learning"><meta property="og:description" content="RAG, machine learning and FastAPI projects by Ojus Gupta."><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0d12;--bg2:#17151d;--ink:#f3efe8;--mute:#a09bab;--line:#2a2733;--acc:#c4a8f5;--accink:#1a1226;--mock:#f4effb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+:root[data-theme="light"]{--bg:#f7f4fb;--bg2:#fff;--ink:#1b1724;--mute:#6c6578;--line:#ddd6e8;--accink:#fff;color-scheme:light}
+*,*:before,*:after{box-sizing:inherit}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.mono{font:600 11.5px/1 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase}
+.ser{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;color:var(--acc)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+#glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 14%,transparent),transparent 65%);transform:translate(-50%,-50%);left:50%;top:30%;z-index:0}
+nav.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+#prog{position:absolute;left:0;bottom:-1px;height:2px;background:var(--acc);width:0}
+.bar .in{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;gap:14px;align-items:center}.logo b{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);font:400 25px "Instrument Serif",serif;color:var(--ink)}
+.logo span{font-weight:700;font-size:18px;display:block;line-height:1.1}.logo small{color:var(--mute);font:400 10px "JetBrains Mono",monospace;letter-spacing:.12em}
+.links{display:flex;gap:34px}.links a{color:var(--mute);font-weight:500;position:relative;padding:6px 0}.links a.on,.links a:hover{color:var(--ink)}
+.links a.on:after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--acc)}
+.tools{display:flex;gap:12px;align-items:center}
+.sq{width:46px;height:46px;border:1px solid var(--line);border-radius:10px;background:var(--bg2);display:grid;place-items:center}
+.tog{display:flex;border:1px solid var(--line);border-radius:30px;padding:4px;background:var(--bg2)}.tog span{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:var(--mute)}.tog span.a{background:var(--line);color:var(--ink)}
+.talk{border:1px solid var(--line);background:var(--bg2);padding:13px 20px;border-radius:8px;font-weight:600;font-size:15px}.talk:hover{border-color:var(--acc)}
+main,footer{position:relative;z-index:1}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center;padding:36px 0 40px;min-height:78vh}
+.top{display:flex;justify-content:space-between;grid-column:1/-1;color:var(--mute)}.top .ok{display:flex;gap:10px;align-items:center;font-size:15px;color:var(--ink)}.dot{width:10px;height:10px;border-radius:50%;background:#7be0b0;box-shadow:0 0 0 4px #7be0b02e}
+.hey{display:flex;gap:14px;align-items:center;color:var(--ink);margin:26px 0 18px}.hey:before{content:"";width:30px;height:1px;background:var(--acc)}
+h1{font:600 clamp(52px,8.4vw,112px)/1.02 "Schibsted Grotesk",sans-serif;letter-spacing:-.045em;margin:0 0 26px}h1 .ser{font-size:1.1em;letter-spacing:-.03em}
+.role{font-weight:600;margin:0 0 12px}.role:before{content:"/ ";color:var(--acc)}
+.lede{color:var(--mute);font-size:19px;max-width:23em;margin:0 0 30px}
+.btn{display:inline-flex;gap:18px;align-items:center;padding:19px 28px;border-radius:8px;font-weight:600;margin:0 12px 12px 0;border:1px solid var(--line);transition:transform .2s,border-color .2s}
+.btn.p{background:var(--acc);color:var(--accink);border-color:var(--acc)}.btn:hover{transform:translateY(-3px);border-color:var(--acc)}
+.soc{display:flex;gap:20px;align-items:center;color:var(--mute);margin-top:18px}.soc a:hover{color:var(--acc)}
+#globeBox{position:relative;aspect-ratio:1/.92;cursor:grab;touch-action:pan-y}#globeBox:active{cursor:grabbing}
+#globe{width:100%;height:100%;display:block}
+.tag{position:absolute;left:0;top:0;border:1px solid var(--line);background:color-mix(in srgb,var(--bg2) 90%,transparent);border-radius:20px;padding:7px 14px 7px 12px;font:600 12px "JetBrains Mono",monospace;color:var(--acc);white-space:nowrap;will-change:transform}
+.tag:before{content:"• ";color:var(--mute)}
+.cap{position:absolute;bottom:4px;left:0;right:0;display:flex;justify-content:space-between;color:var(--mute);pointer-events:none}
+.stats{border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:34px 0;gap:30px;flex-wrap:wrap}
+.stats p{color:var(--mute);font-size:14px;margin:0;max-width:16em}.st b{font:500 40px/1 "Schibsted Grotesk";letter-spacing:-.03em;display:block}.st .mono{color:var(--mute);font-size:10px}
+.marq{border-block:1px solid var(--line);overflow:hidden;background:var(--bg2)}.marq div{display:flex;gap:44px;width:max-content;padding:34px 0;animation:mq 38s linear infinite}.marq:hover div{animation-play-state:paused}
+.marq span{font-size:19px;color:var(--mute);display:flex;gap:44px;align-items:center;white-space:nowrap}.marq span:after{content:"✳";color:var(--acc)}@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:96px 0}.eyebrow{display:flex;gap:16px;align-items:center;margin-bottom:26px}.eyebrow i{width:30px;height:1px;background:var(--line)}.eyebrow b{color:var(--acc)}
+h2{font:600 clamp(40px,6vw,76px)/1.04 "Schibsted Grotesk";letter-spacing:-.04em;margin:0}h2 .ser{font-size:1.1em}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:40px}.head p{color:var(--mute);max-width:21em;margin:0;font-size:18px}
+.filters{display:flex;gap:14px;margin-bottom:30px;flex-wrap:wrap}.filters button{background:none;border:1px solid transparent;border-radius:8px;padding:12px 18px;color:var(--mute);font-weight:500}.filters button.on{background:var(--bg2);border-color:var(--line);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s}.card:hover{border-color:var(--acc)}.card.wide{grid-column:1/-1}.card[hidden]{display:none}
+.art{height:340px;display:grid;place-items:center;position:relative;perspective:900px;overflow:hidden}
+.win{width:76%;max-width:520px;background:#16141c;border:1px solid #ffffff1a;border-radius:12px;overflow:hidden;color:#eee;transition:transform .15s;box-shadow:0 30px 60px #0005}.win.lt{background:#fbf9ff;color:#2b2140}
+.win .tb{display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid #8883;align-items:center}.win .tb i{width:8px;height:8px;border-radius:50%;background:#8886}.win .tb em{margin:auto;font:400 9px "JetBrains Mono";opacity:.6;font-style:normal}
+.win .bd{padding:18px}.win h4{margin:0 0 14px;font:600 15px "Schibsted Grotesk";font-size:15px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border:1px solid #8883;border-radius:8px;margin-bottom:8px;font-size:12px}.row b{color:#7be0b0}
+.chip{display:inline-block;font:600 9px "JetBrains Mono";padding:4px 9px;border-radius:12px;background:#8883;margin:0 6px 6px 0}
+.q{border:1px solid #8885;border-radius:8px;padding:10px 12px;font-size:12px;margin-top:12px;display:flex;justify-content:space-between}.q:after{content:"▌";color:var(--acc);animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
+.bars{display:flex;gap:16px;align-items:flex-end;height:110px}.bars div{flex:1;display:flex;gap:5px;align-items:flex-end;height:100%}.bars i{flex:1;border-radius:4px 4px 0 0;background:var(--acc);height:0;transition:height 1s}.bars i+i{background:#7be0b0}.on .bars i{height:var(--h)}
+.bl{display:flex;justify-content:space-around;font:400 9px "JetBrains Mono";margin-top:8px;opacity:.7}
+.info{padding:28px 32px 32px;display:flex;flex-direction:column;gap:14px;flex:1}.info .k{color:var(--mute)}.info .k b{color:var(--acc)}
+.info h3{font:600 34px/1.1 "Schibsted Grotesk";letter-spacing:-.03em;margin:0;display:flex;justify-content:space-between;align-items:center}
+.info p{color:var(--mute);margin:0}.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{border:1px solid var(--line);border-radius:6px;padding:6px 11px;font:600 11.5px "JetBrains Mono"}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}.more>div{overflow:hidden}.card.open .more{grid-template-rows:1fr}.more ul{margin:4px 0 6px;padding-left:20px;color:var(--mute)}.more li{margin-bottom:8px}
+.ex{background:none;border:0;padding:0;font-weight:600;display:flex;gap:10px;align-items:center;margin-top:auto;align-self:flex-start}.ex:hover{color:var(--acc)}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:56px}.ab p{color:var(--mute);font-size:19px;margin:0 0 20px}
+.tl{border-left:1px solid var(--line);padding-left:28px;margin-bottom:34px;position:relative}.tl:before{content:"";position:absolute;left:-6px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--acc)}.tl h3{margin:0;font-size:22px;letter-spacing:-.02em}.tl small{color:var(--mute);display:block;margin:4px 0 8px}.tl ul{margin:0;padding-left:18px;color:var(--mute)}
+.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.sk div{border:1px solid var(--line);background:var(--bg2);border-radius:16px;padding:22px}.sk h4{margin:0 0 8px;font-size:17px}.sk p{margin:0;color:var(--mute);font-size:15px}
+.rec{display:grid;grid-template-columns:1fr 1fr;gap:16px}.rec a,.rec div{border:1px solid var(--line);background:var(--bg2);border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:center;transition:transform .2s,border-color .2s}.rec>*:hover{transform:translateX(6px);border-color:var(--acc)}.rec .ic{color:var(--acc);font-size:22px}.rec small{color:var(--mute);display:block}
+.lab{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.lab div{border:1px dashed var(--line);border-radius:18px;padding:28px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .2s}.lab div:hover{border-color:var(--acc)}.lab h3{margin:10px 0 0;font-size:26px;letter-spacing:-.03em}.lab p{color:var(--mute);margin:0;font-size:15px}
+.meter{height:4px;background:var(--line);border-radius:4px;overflow:hidden}.meter i{display:block;height:100%;background:var(--acc);width:0;transition:width 1.4s}.on .meter i{width:var(--w)}
+footer{border-top:1px solid var(--line);padding:100px 0 50px}footer h2{font-size:clamp(46px,9vw,130px)}footer .row2{display:flex;gap:16px;flex-wrap:wrap;margin:36px 0}
+.side{position:fixed;top:50%;z-index:5;color:var(--mute);font:400 10px "JetBrains Mono";letter-spacing:.2em;writing-mode:vertical-rl;transform:translateY(-50%);text-transform:uppercase}.side.l{left:14px;transform:translateY(-50%) rotate(180deg)}.side.r{right:14px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
+#toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,80px);background:var(--acc);color:var(--accink);padding:12px 20px;border-radius:8px;font-weight:600;transition:transform .3s;z-index:30}#toast.s{transform:translate(-50%,0)}
+.tk{font:600 26px "Schibsted Grotesk";margin:48px 0 18px;letter-spacing:-.02em}.tk small{font:400 15px "Schibsted Grotesk";color:var(--mute)}
+.sk{counter-reset:k}.sk div{counter-increment:k;position:relative;overflow:hidden;min-height:170px;transition:border-color .2s}.sk div:hover,.lab div:hover{border-color:var(--acc)}
+.sk div:after{content:"0" counter(k);position:absolute;right:22px;top:24px;font:600 10px "JetBrains Mono";color:var(--mute)}
+.sk h4:before{display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--line);border-radius:10px;margin-bottom:20px;color:var(--acc);font-size:20px;background:var(--bg)}
+.sk div:nth-child(1) h4:before{content:"{ }"}.sk div:nth-child(2) h4:before{content:"∿"}.sk div:nth-child(3) h4:before{content:"◎"}.sk div:nth-child(4) h4:before{content:"✦"}.sk div:nth-child(5) h4:before{content:"▤"}.sk div:nth-child(6) h4:before{content:"☁"}
+.sk div,.lab div,.rec>*{background-image:radial-gradient(280px circle at var(--mx,50%) var(--my,-60%),color-mix(in srgb,var(--acc) 15%,transparent),transparent)}
+.lab div{position:relative;overflow:hidden}.lab div:before{content:"";position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;border:1px solid var(--line);border-top-color:var(--acc);animation:sp 9s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.rec>*{position:relative}.rec .ic{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;flex:none}
+#rot{display:inline-block;transition:opacity .3s,transform .3s}#rot.o{opacity:0;transform:translateY(8px)}
+.cc{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;margin:44px 0;padding:36px;border:1px solid var(--line);border-radius:24px;background:var(--bg2)}.em{font:600 clamp(22px,3vw,34px) "Schibsted Grotesk";letter-spacing:-.03em;margin:12px 0 30px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}.em .sq{width:40px;height:40px}
+.fm h3{margin:0 0 20px;font-size:22px;letter-spacing:-.02em}.fm label{display:block;color:var(--mute);font-size:14px;font-weight:500;margin-bottom:18px}.fm input,.fm textarea{display:block;width:100%;background:none;border:0;border-bottom:1px solid var(--line);color:var(--ink);font:400 16px "Schibsted Grotesk";padding:12px 0;margin-top:6px;resize:vertical}.fm input:focus,.fm textarea:focus{outline:0;border-color:var(--acc)}.two2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.gh{color:var(--acc);font-weight:600;display:inline-block;margin-top:6px}.gh:hover{text-decoration:underline}
+@media(max-width:900px){.cc,.two2{grid-template-columns:1fr}.hero,.ab,.grid,.rec,.lab,.sk{grid-template-columns:1fr}.links,.side,.stats p{display:none}.wrap{padding:0 20px}.card.wide{grid-column:auto}.tools .sq,.talk{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<div id="glow"></div><div class="side l">Curious by nature. Engineer by craft.</div><div class="side r">Building what comes next.</div>
+<nav class="bar"><div class="wrap in">
+<a class="logo" href="#top"><b>OG</b><div><span>ojus gupta.</span><small>AI &amp; MACHINE LEARNING</small></div></a>
+<div class="links"><a href="#work" class="on">Work</a><a href="#about">About</a><a href="#recognition">Recognition</a><a href="#lab">The lab</a></div>
+<div class="tools"><button class="sq" id="pal" aria-label="Change accent color">🎨</button><div class="tog" id="tg" role="button" tabindex="0" aria-label="Toggle theme"><span id="sun">☀</span><span class="a" id="moon">☾</span></div><a class="talk" href="mailto:ojusgupta004@gmail.com">Let's talk ↗</a></div>
+</div><div id="prog"></div></nav>
+<main><div class="wrap" id="top">
+<div class="hero">
+<div class="top"><span class="mono">✳ A little curiosity. A lot of possibility.</span><span class="ok"><i class="dot"></i>Open to opportunities</span></div>
+<div><div class="hey mono">Hey, I'm Ojus Gupta</div>
+<h1>Turning ideas<br>into <span class="ser">intelligence.</span></h1>
+<p class="role"><span id="rot">Generative AI builder</span></p>
+<p class="lede">I build machine learning and retrieval systems that bridge research and the real world. Thoughtfully engineered. Endlessly curious.</p>
+<a class="btn p" href="#work">Explore my work ↓</a><a class="btn" href="mailto:ojusgupta004@gmail.com">Get in touch ↗</a>
+<div class="soc"><a href="https://github.com/OjusGupta" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/ojus-gupta-10b215328/" target="_blank" rel="noopener">LinkedIn</a><a href="https://leetcode.com/u/4D7JkgXlLI/" target="_blank" rel="noopener">LeetCode</a><span class="mono">| Based at VIT Bhopal, India</span></div></div>
+<div id="globeBox"><canvas id="globe"></canvas><span class="tag">LLM</span><span class="tag">RAG</span><span class="tag">ML</span><span class="tag">Agentic AI</span>
+<div class="cap mono"><span>From research ↗ to reality</span><span>Drag to explore ↔</span></div></div>
+</div>
+<div class="stats"><p>Looking for an opportunity to explore, build &amp; make a difference.</p>
+<div class="st"><b data-n="6">0</b><span class="mono">Selected projects</span></div><div class="st"><b data-n="2">0</b><span class="mono">Hackathon wins</span></div><div class="st"><b data-n="5">0</b><span class="mono">Certifications</span></div><div class="st"><b data-n="8.33">0</b><span class="mono">CGPA</span></div></div>
+</div>
+<div class="marq"><div id="mq"></div></div>
+
+<section id="work"><div class="wrap">
+<div class="eyebrow mono"><b>01</b><i></i>Selected work</div>
+<div class="head"><h2>Ideas, brought<br>to <span class="ser">life.</span></h2><p>A few things I've built to understand, reason, and solve real problems.</p></div>
+<div class="filters" id="fl"><button class="on" data-f="all">All projects</button><button data-f="ai">AI &amp; agents</button><button data-f="ml">Machine learning</button><button data-f="web">Web</button></div>
+<div class="grid">
+<article class="card wide rv" data-c="ai"><div class="art" style="background:linear-gradient(135deg,#e6d9f8,#b79fe0)"><div class="win lt tilt"><div class="tb"><i></i><i></i><i></i><em>nexus / agentic rag</em></div><div class="bd"><h4>Ask your textbooks.</h4><span class="chip">VECTOR</span><span class="chip">BM25</span><span class="chip">RERANK</span><div class="row">Chapter 4, page 112<b>✓ cited</b></div><div class="row">Chapter 9, page 37<b>✓ cited</b></div><div class="q">Explain gradient descent</div></div></div></div>
+<div class="info"><div class="k mono"><b>01</b> / Retrieval &amp; agents</div><h3>Nexus Console</h3><p>An agentic RAG assistant over 17+ academic textbooks. It blends semantic search, keyword search and cross-encoder reranking to give grounded, citation-aware answers.</p><div class="tags"><span>LangChain</span><span>ChromaDB</span><span>Hugging Face</span><span>BM25</span><span>FastAPI</span></div>
+<div class="more"><div><ul><li>Indexed 4,300+ chunks with sentence-aware chunking and Hugging Face embeddings.</li><li>Combined vector retrieval, BM25 and a cross-encoder to rank the best passages first.</li><li>LangChain handles multi-step questions behind a FastAPI backend.</li></ul><a class="gh" href="https://github.com/OjusGupta/agentic-graph-rag-ai-knowledge-assistant" target="_blank" rel="noopener">View on GitHub ↗</a></div></div><button class="ex">Explore the project <span>↗</span></button></div></article>
+
+<article class="card rv" data-c="ai"><div class="art" style="background:linear-gradient(135deg,#c9d3f2,#9aa8dc)"><div class="win tilt"><div class="tb"><i></i><i></i><i></i><em>finsight / reconciliation</em></div><div class="bd"><h4>Numbers you can trust.</h4><div class="row">Invoice #1042 matched<b>✓</b></div><div class="row">Duplicate payment flagged<b style="color:#f5c26b">!</b></div><div class="row">Ledger posted once<b>✓</b></div></div></div></div>
+<div class="info"><div class="k mono"><b>02</b> / Finance intelligence</div><h3>FinSightAI</h3><p>A finance platform with a 34-table schema, anomaly detection, deterministic reconciliation and a LangGraph copilot that calls finance tools and reads policy documents.</p><div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>LangGraph</span><span>Tool calling</span><span>Pytest</span></div>
+<div class="more"><div><ul><li>Precise decimal arithmetic, duplicate checks and idempotent ledger postings.</li><li>Rule-based anomaly detection on synthetic retail and ERP data.</li><li>13 read-only analytics endpoints and a 44-test Pytest suite.</li></ul><a class="gh" href="https://github.com/OjusGupta/Finsight" target="_blank" rel="noopener">View on GitHub ↗</a></div></div><button class="ex">Explore the project <span>↗</span></button></div></article>
+
+<article class="card rv" data-c="ml"><div class="art" style="background:linear-gradient(135deg,#cfe6d6,#8fbf9f)"><div class="win tilt"><div class="tb"><i></i><i></i><i></i><em>heart-disease / classifier</em></div><div class="bd"><h4>AdaBoost vs Random Forest.</h4><div class="bars"><div><i style="--h:78%"></i><i style="--h:70%"></i></div><div><i style="--h:66%"></i><i style="--h:74%"></i></div><div><i style="--h:72%"></i><i style="--h:68%"></i></div><div><i style="--h:70%"></i><i style="--h:72%"></i></div></div><div class="bl"><span>ACC</span><span>PREC</span><span>REC</span><span>F1</span></div></div></div></div>
+<div class="info"><div class="k mono"><b>03</b> / Machine learning</div><h3>Predictive ML Pipeline</h3><p>A binary classification pipeline on the UCI Heart Disease dataset that compares AdaBoost and Random Forest. Bars are illustrative, not real scores.</p><div class="tags"><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Feature engineering</span></div>
+<div class="more"><div><ul><li>Preprocessing and feature engineering before training.</li><li>Models compared on accuracy, precision, recall and F1-score.</li><li>Won first place at a college-level machine learning hackathon.</li></ul><a class="gh" href="https://github.com/OjusGupta" target="_blank" rel="noopener">View on GitHub ↗</a></div></div><button class="ex">Explore the project <span>↗</span></button></div></article>
+<article class="card rv" data-c="ml"><div class="art" style="height:260px;background:linear-gradient(135deg,#f0dcc6,#d9b48c)"><div class="win tilt"><div class="tb"><i></i><i></i><i></i><em>sagemaker / fastapi</em></div><div class="bd"><h4>Train. Deploy. Serve.</h4><div class="row">Training job<b>✓</b></div><div class="row">Endpoint live<b>✓</b></div><div class="row">POST /predict<b>200</b></div></div></div></div><div class="info"><div class="k mono"><b>04</b> / Cloud ML</div><h3>AWS SageMaker Pipeline</h3><p>A machine learning pipeline built around AWS SageMaker and a FastAPI service.</p><div class="tags"><span>Python</span><span>AWS SageMaker</span><span>FastAPI</span></div><a class="gh" href="https://github.com/OjusGupta/aws-sagemaker-fastapi-pipeline" target="_blank" rel="noopener">View on GitHub ↗</a></div></article>
+<article class="card rv" data-c="ml"><div class="art" style="height:260px;background:linear-gradient(135deg,#f3d0d0,#d99a9a)"><div class="win lt tilt"><div class="tb"><i></i><i></i><i></i><em>calories / regression</em></div><div class="bd"><h4>Workout in. Calories out.</h4><span class="chip">DURATION</span><span class="chip">HEART RATE</span><span class="chip">BODY TEMP</span><div class="q">Predicting calories burnt</div></div></div></div><div class="info"><div class="k mono"><b>05</b> / Machine learning</div><h3>Calories Burnt Prediction</h3><p>A machine learning notebook that predicts calories burnt from workout data.</p><div class="tags"><span>Python</span><span>Jupyter</span><span>Scikit-learn</span></div><a class="gh" href="https://github.com/OjusGupta/Calories-Burnt-Prediction-Using-ML" target="_blank" rel="noopener">View on GitHub ↗</a></div></article>
+<article class="card wide rv" data-c="web"><div class="art" style="height:260px;background:linear-gradient(135deg,#c6e4ea,#8fc0cc)"><div class="win tilt"><div class="tb"><i></i><i></i><i></i><em>crm / portal</em></div><div class="bd"><h4>Every lead, one place.</h4><div class="row">New leads<b>✓</b></div><div class="row">Follow-ups due<b style="color:#f5c26b">!</b></div><div class="row">Weekly report<b>✓</b></div></div></div></div><div class="info"><div class="k mono"><b>06</b> / Web</div><h3>CRM Portal UI</h3><p>A CRM portal interface in JavaScript, in the same space as my internship work on client dashboards.</p><div class="tags"><span>JavaScript</span><span>Dashboards</span></div><a class="gh" href="https://github.com/OjusGupta/CRM-portal-ui" target="_blank" rel="noopener">View on GitHub ↗</a></div></article>
+</div></div></section>
+
+<section id="about" style="border-top:1px solid var(--line)"><div class="wrap">
+<div class="eyebrow mono"><b>02</b><i></i>About</div>
+<div class="ab"><div><h2>Curious by nature, <span class="ser">engineer</span> by craft.</h2><br>
+<p>I'm a B.Tech CSE (AI &amp; ML) student at VIT Bhopal, 2023 to 2027, with a CGPA of 8.33. I like turning messy data and vague questions into systems that work.</p><p>Away from the keyboard: history, cricket and guitar.</p></div>
+<div><div class="tl"><h3>Web &amp; CRM Development Intern</h3><small>Janviba Ventures (Nifty Invest), Jul to Sep 2025</small><ul><li>Built and maintained production websites and CRM dashboards for two client platforms.</li><li>Debugged workflows with AI-assisted tools and worked with founders on reporting.</li></ul></div>
+<div class="tl"><h3>B.Tech, CSE (AI &amp; ML)</h3><small>Vellore Institute of Technology, Bhopal, 2023 to 2027</small></div></div></div>
+<h3 class="tk">My toolkit <small>/ always evolving</small></h3><div class="sk"><div><h4>Languages &amp; data</h4><p>Python, SQL, Java, Pandas, NumPy</p></div><div><h4>Machine learning</h4><p>Scikit-learn, EDA, classification, clustering, feature engineering, evaluation</p></div><div><h4>Deep learning &amp; NLP</h4><p>PyTorch, Transformers, embeddings</p></div><div><h4>Generative AI</h4><p>RAG, LangChain, LangGraph, LLMs, prompt engineering, tool calling</p></div><div><h4>Backend &amp; tools</h4><p>FastAPI, REST, PostgreSQL, ChromaDB, Docker, Git, Pytest</p></div><div><h4>Cloud</h4><p>AWS (foundational), SageMaker, Lambda, EC2, S3, OCI</p></div></div>
+</div></section>
+
+<section id="recognition" style="border-top:1px solid var(--line)"><div class="wrap">
+<div class="eyebrow mono"><b>03</b><i></i>A few moments that matter</div>
+<div class="head"><h2>Small <span class="ser">milestones.</span></h2></div>
+<div class="rec"><div><span class="ic">🏆</span><span>1st Place, Linpack Hackathon<small>Machine Learning</small></span></div><div><span class="ic">🏆</span><span>Winner, Computer Vision Hackathon<small>AI Posture Coach</small></span></div>
+<div><span class="ic">✳</span><span>Oracle Cloud Infrastructure Architect Associate<small>Oracle</small></span></div><div><span class="ic">✳</span><span>Oracle Agentic AI Foundations Associate<small>Oracle</small></span></div>
+<div><span class="ic">✳</span><span>Applied Machine Learning in Python<small>University of Michigan, Coursera</small></span></div><div><span class="ic">✳</span><span>AWS Cloud Practitioner Essentials<small>AWS</small></span></div></div>
+</div></section>
+
+<section id="lab" style="border-top:1px solid var(--line)"><div class="wrap">
+<div class="eyebrow mono"><b>04</b><i></i>The lab</div>
+<div class="head"><h2>Still curious.<br>Still <span class="ser">building.</span></h2><p>What I'm learning right now. Progress bars are playful, not exact.</p></div>
+<div class="lab rv"><div><span class="mono" style="color:var(--acc)">Learning</span><h3>MCP &amp; tool use</h3><p>Connecting LLM agents to real tools and data.</p><div class="meter"><i style="--w:40%"></i></div></div>
+<div><span class="mono" style="color:var(--acc)">Learning</span><h3>AWS SageMaker</h3><p>Training and deploying models in the cloud.</p><div class="meter"><i style="--w:35%"></i></div></div>
+<div><span class="mono" style="color:var(--acc)">Exploring</span><h3>Agentic workflows</h3><p>Multi-step LangGraph agents that plan and verify.</p><div class="meter"><i style="--w:60%"></i></div></div></div>
+</div></section></main>
+
+<footer id="contact"><div class="wrap"><div class="eyebrow mono"><b>05</b><i></i>The next chapter</div>
+<h2>Good ideas deserve<br><span class="ser">good company.</span></h2>
+<div class="cc"><div><span class="mono" style="color:var(--mute)">Have something in mind?</span><p class="em">ojusgupta004@gmail.com <button class="sq" id="cp" aria-label="Copy email">⧉</button></p><span class="mono" style="color:var(--mute)">Elsewhere on the internet</span><p class="soc"><a href="https://github.com/OjusGupta" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/ojus-gupta-10b215328/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://leetcode.com/u/4D7JkgXlLI/" target="_blank" rel="noopener">LeetCode ↗</a></p><p class="mono"><i class="dot"></i> Bhopal, India<br><b id="clk" style="font-size:18px"></b></p></div><div class="fm"><h3>A good conversation starts here.</h3><div class="two2"><label>Your name<input id="fn" placeholder="How should I call you?"></label><label>Email address<input id="fe" placeholder="you@example.com"></label></div><label>Your idea, opportunity, or hello<textarea id="fm" rows="4" placeholder="Tell me a little about what you have in mind..."></textarea></label><button class="btn p" id="sd">Send message ➤</button> <small style="color:var(--mute)">Opens your email app, addressed to me.</small></div></div>
+<span class="mono" style="color:var(--mute)">© 2026 Ojus Gupta · Bhopal, India</span></div></footer>
+<div id="toast" role="status"></div>
+
+<script>
+var R=document.documentElement,$=function(s){return document.querySelector(s)},$$=function(s){return[].slice.call(document.querySelectorAll(s))};
+function toast(t){var e=$('#toast');e.textContent=t;e.classList.add('s');setTimeout(function(){e.classList.remove('s')},1800)}
+// marquee
+var sk=['Machine learning','Generative AI','RAG pipelines','Agentic systems','LangGraph','Vector search','FastAPI','PyTorch','Hugging Face','PostgreSQL'];
+$('#mq').innerHTML=sk.concat(sk).map(function(s){return'<span>'+s+'</span>'}).join('');
+// theme + palette
+var pals=['#c4a8f5','#7be0b0','#f5c26b','#f59a9a','#8cc4f5'],pi=0;
+$('#pal').onclick=function(){pi=(pi+1)%pals.length;R.style.setProperty('--acc',pals[pi])};
+function th(){var l=R.getAttribute('data-theme')==='light';R.setAttribute('data-theme',l?'dark':'light');$('#sun').className=l?'':'a';$('#moon').className=l?'a':''}
+$('#tg').onclick=th;$('#tg').onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();th()}};
+// glow + progress
+addEventListener('mousemove',function(e){var g=$('#glow');g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
+var secs=$$('main section');
+addEventListener('scroll',function(){var h=R.scrollHeight-innerHeight;$('#prog').style.width=(scrollY/h*100)+'%';var cur='work';secs.forEach(function(s){if(s.getBoundingClientRect().top<200)cur=s.id});$$('.links a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)})});
+// reveal + counters + meters
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.15});
+$$('.rv,.lab,.stats').forEach(function(e){io.observe(e)});
+$$('.stats b').forEach(function(b){var n=+b.dataset.n,t0=null;function f(t){t0=t0||t;var p=Math.min((t-t0)/1400,1);b.textContent=n%1?(n*p).toFixed(2):Math.round(n*p);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)});
+// filters
+$('#fl').onclick=function(e){var f=e.target.dataset.f;if(!f)return;$$('#fl button').forEach(function(b){b.classList.toggle('on',b===e.target)});$$('.card').forEach(function(c){c.hidden=f!=='all'&&c.dataset.c!==f})};
+// expand + tilt
+$$('.ex').forEach(function(b){b.onclick=function(){var c=b.closest('.card');c.classList.toggle('open');b.firstChild.textContent=c.classList.contains('open')?'Show less ':'Explore the project '}});
+$$('.art').forEach(function(a){var w=a.querySelector('.win');a.onmousemove=function(e){var r=a.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;w.style.transform='rotateY('+x*14+'deg) rotateX('+-y*14+'deg)'};a.onmouseleave=function(){w.style.transform=''}});
+$$('.card').forEach(function(c){new IntersectionObserver(function(es){if(es[0].isIntersecting)c.classList.add('on')},{threshold:.3}).observe(c)});
+$('#cp').onclick=function(){try{navigator.clipboard.writeText('ojusgupta004@gmail.com').then(function(){toast('Email copied')},function(){toast('ojusgupta004@gmail.com')})}catch(e){toast('ojusgupta004@gmail.com')}};
+$$('[data-l][href="#"]').forEach(function(a){a.onclick=function(e){e.preventDefault();toast(a.dataset.l+' link coming soon')}});
+var rw=['Generative AI builder','Machine learning engineer','RAG & agents developer','Python backend developer'],ri=0;setInterval(function(){var e=$('#rot');e.classList.add('o');setTimeout(function(){ri=(ri+1)%rw.length;e.textContent=rw[ri];e.classList.remove('o')},300)},2600);
+$$('.sk div,.lab div,.rec>*').forEach(function(el){el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();el.style.setProperty('--mx',e.clientX-r.left+'px');el.style.setProperty('--my',e.clientY-r.top+'px')})});
+function tk(){$('#clk').textContent=new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Kolkata'})+' IST'}tk();setInterval(tk,1000);
+$('#sd').onclick=function(){var b='Hi Ojus,%0A%0A'+encodeURIComponent($('#fm').value)+'%0A%0A'+encodeURIComponent($('#fn').value)+' ('+encodeURIComponent($('#fe').value)+')';location.href='mailto:ojusgupta004@gmail.com?subject='+encodeURIComponent('Hello from your portfolio')+'&body='+b};
+// globe
+var cv=$('#globe'),cx=cv.getContext('2d'),box=$('#globeBox'),tags=$$('.tag'),pts=[],N=1100,rot=0,vel=.003,drag=false,lx=0,W,H,dpr=Math.min(devicePixelRatio||1,2);
+for(var i=0;i<N;i++){var y=1-2*(i+.5)/N,r=Math.sqrt(1-y*y),a=i*2.39996,lat=Math.asin(y),lon=Math.atan2(Math.sin(a)*r,Math.cos(a)*r);
+var land=Math.sin(lon*2+1)*Math.cos(lat*3)+Math.sin(lon*3.7+lat)*Math.sin(lat*2.2+1)+Math.cos(lon*1.3-lat*2)*.5>.55;pts.push({y:y,r:r,a:a,land:land})}
+function size(){W=box.clientWidth;H=box.clientHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}size();addEventListener('resize',size);
+box.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX});addEventListener('pointerup',function(){drag=false});
+addEventListener('pointermove',function(e){if(drag){vel=(e.clientX-lx)*.0016;rot+=(e.clientX-lx)*.006;lx=e.clientX}});
+var acc='#c4a8f5',tt=0;
+function draw(){tt+=.006;if(!drag){vel+=(.003-vel)*.02;rot+=vel}
+acc=getComputedStyle(R).getPropertyValue('--acc').trim()||acc;var light=R.getAttribute('data-theme')==='light';
+cx.clearRect(0,0,W,H);var c=W/2,d=H/2-10,R0=Math.min(W,H)*.34,tilt=.35,ct=Math.cos(tilt),st=Math.sin(tilt);
+var g=cx.createRadialGradient(c,d,R0*.6,c,d,R0*1.5);g.addColorStop(0,acc+'22');g.addColorStop(1,'transparent');cx.fillStyle=g;cx.fillRect(0,0,W,H);
+cx.strokeStyle=light?'#0002':'#ffffff18';cx.lineWidth=1;cx.beginPath();cx.arc(c,d,R0,0,7);cx.stroke();cx.beginPath();cx.arc(c,d,R0*1.45,0,7);cx.setLineDash([2,6]);cx.stroke();cx.setLineDash([]);
+pts.forEach(function(p){var th=p.a+rot,x=p.r*Math.cos(th),z0=p.r*Math.sin(th),y=p.y,y2=y*ct-z0*st,z=y*st+z0*ct;if(z<-.05&&!p.land)return;
+var al=(z+1)/2;cx.globalAlpha=p.land?.25+al*.75:.08+al*.3;cx.fillStyle=p.land?(light?'#4a3a6a':'#e9e1f7'):acc;cx.beginPath();cx.arc(c+x*R0,d+y2*R0,p.land?1.9:1.1,0,7);cx.fill()});cx.globalAlpha=1;
+tags.forEach(function(t,i){var an=tt*(1+i*.18)+i*1.7,x=Math.cos(an)*R0*1.4,y=Math.sin(an)*R0*.45-Math.cos(an)*R0*.2,z=Math.sin(an);
+t.style.transform='translate('+(c+x-t.offsetWidth/2)+'px,'+(d+y-14)+'px)';t.style.opacity=.35+.65*(z+1)/2;t.style.zIndex=z>0?3:1});
+requestAnimationFrame(draw)}
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){vel=0}draw();
+</script></body></html>
